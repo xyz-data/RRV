@@ -1,0 +1,47 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.tabSize": 4,
+    "typescript.check.tscVersion": true,
+    "files.autoSave": "off",
+    "files.associations": {
+        "*.js": "javascriptreact",
+        "*.jsx": "javascriptreact",
+        "*.ts": "typescript",
+        "*.scss": "sass",
+        "*.json": "json"
+    },
+    "editor.trimAutoWhitespace": false,
+    "editor.renderWhitespace": "all",
+    "editor.tabCompletion": true,
+    "editor.mouseWheelZoom": true,
+    "editor.parameterHints": false,
+    "editor.lineHeight": 24,
+    "editor.fontSize": 14,
+    "editor.formatOnSave": false,
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 80,
+    "editor.wrappingIndent": "same",
+    "html.format.enable": false,
+    "html.format.extraLiners": "",
+    "html.format.unformatted": "html, head, body, a, abbr, acronym, b, bdo, big, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, q, samp, select, small, span, strong, sub, sup, textarea, tt, var",
+    "html.format.wrapLineLength": 80,
+    "html.format.wrapAttributes": "auto",
+    "workbench.statusBar.visible": true,
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.presets.angular": false,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\cmd.exe",
+    "[javascript]": {},
+    "emmet.excludeLanguages": [
+        "markdown",
+        "json"
+    ],
+    "javascript.format.enable": false,
+    "javascript.validate.enable": false,
+    "eslint.enable": true,
+    "[html]": {
+        "editor.formatOnSave": false
+    },
+    "[json]": {
+        "editor.formatOnSave": false
+    }
+}
