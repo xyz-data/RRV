@@ -19,10 +19,18 @@ import './index.css';
 
 // https://github.com/zalmoxisus/redux-devtools-extension#usage
 // redux-devtools-extension
+
+// 创建 store ， createStore(reducer, [preloadedState], [enhancer])
+// http://redux.js.org/docs/api/createStore.html
+
 const store = createStore(AppReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
-// createStore(reducer, [preloadedState], [enhancer])
-// http://redux.js.org/docs/api/createStore.html
+/* 
+
+(alias) createStore<any>(reducer: <A extends Action>(state: any, action: A) => any, preloadedState: any, enhancer?: (next: (reducer: <A extends Action>(state: any, action: A) => any, preloadedState?: any) => Store<any>) => (reducer: <A extends Action>(state: any, action: A) => any, preloadedState?: any) => Store<any>): Store<any> (+1 overload)
+import createStore
+
+*/
 
 
 // 封装 root 组件,  App 与 Results 共享唯一的一个 Store
@@ -49,5 +57,5 @@ const render = () => {
 // 父组件上， 注销 state 监听器
 store.subscribe(render);
 
-// 
+// ？？？
 render();
