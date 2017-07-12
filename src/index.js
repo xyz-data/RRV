@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import {createStore} from 'redux';
 
 import App from './App';
@@ -35,17 +36,18 @@ const Root = () => {
     );
 };
 
-function render () {
+const app_root = document.getElementById('root');
+
+const render = () => {
     ReactDOM.render(
         <Root />
         ,
-        document.getElementById('root')
+        app_root
     );
 }
 
 // 父组件上， 注销 state 监听器
 store.subscribe(render);
 
+// 
 render();
-
-

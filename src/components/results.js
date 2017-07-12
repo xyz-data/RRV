@@ -9,38 +9,45 @@ import React, {Component} from 'react';
 class Results extends Component {
     constructor(props){
         super(props);
+         // 接受从父组件 props 传递过来的 store
         this.store = this.props.store;
-        // 接受从父组件 props 传递过来的 store
+         // 通过 props 获取 store， 使用 state 处理
+        this.state = {
+            store: this.props.store
+        }
     }
-    votesAngularInPercent() {
-        if (this.store.getState().angular) {
+    votesAngularInPercent = () => {
+        const ng2 = this.state.store.getState().angular;
+        const r15 = this.state.store.getState().react;
+        const vue2 = this.state.store.getState().vue;
+        if (ng2) {
             return (
-                this.store.getState().angular 
-                / 
-                (this.store.getState().angular + this.store.getState().react + this.store.getState().vuejs)
-            ) * 100;
+                ng2 / (ng2 + r15 + vue2) * 100
+            );
         } else {
             return 0;
         }
     }
     votesReactInPercent() {
+        const ng2 = this.state.store.getState().angular;
+        const r15 = this.state.store.getState().react;
+        const vue2 = this.state.store.getState().vue;
         if (this.store.getState().react) {
             return (
-                this.store.getState().react
-                /
-                (this.store.getState().angular + this.store.getState().react + this.store.getState().vuejs)
-            ) * 100;
+                r15 / (ng2 + r15 + vue2) * 100
+            );
         } else {
             return 0;
         }
     }
     votesVuejsInPercent() {
-        if (this.store.getState().vuejs) {
+        const ng2 = this.store.getState().angular;
+        const r15 = this.store.getState().react;
+        const vue2 = this.store.getState().vue;
+        if (vue2) {
             return (
-                this.store.getState().vuejs
-                /
-                (this.store.getState().angular + this.store.getState().react + this.store.getState().vuejs)
-            ) * 100;
+                vue2 / (ng2 + r15 + vue2) * 100
+            );
         } else {
             return 0;
         }

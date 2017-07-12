@@ -302,6 +302,41 @@ console.log(copy);
 
 
 
+# react-redux & redux 
+
+
+```sh
+
+$ npm i -S react-redux redux 
+
+$ npm i -S react-redux 
+
+$ npm i -S redux 
+
+```
+
+# Presentational Components & Container Components
+
+http://redux.js.org/docs/basics/UsageWithReact.html#designing-component-hierarchy
+
+
+> 设计组件层次结构
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
