@@ -17,10 +17,14 @@
         window.onload = () => {
             // window.location = "https://" + window.location.hostname + window.location.pathname + window.location.search;
             window.location.pathname = "/build/index.html";
-            window.location.hostname + window.location.pathname;
+            // window.location.hostname + "RRV" + window.location.pathname;
+            // window.location.hostname + "/RRV" + window.location.pathname;
             // window.location = "https://learning.xgqfrms.xyz/";
             // https://raio.xgqfrms.xyz 
             // https://RRV.xgqfrms.xyz/build/index.html
+            /* const new_index = `${window.location.hostname}/RRV${window.location.pathname}`;
+            return new_index; */
+            window.location = `${window.location.hostname}/RRV${window.location.pathname}`;
         }
     </script>
 </body>
