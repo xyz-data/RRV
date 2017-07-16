@@ -6,7 +6,7 @@ const initialState = {
 };
 
 // Reducer 用来处理 Action 触发的对状态树的更改。
-// (oldState, action) => newState
+// (currentState, action) => newState
 
 // reducers 更新 state 
 const AppReducers = (state = initialState, action) => {
@@ -14,8 +14,9 @@ const AppReducers = (state = initialState, action) => {
     switch (action.type) {
         case 'VOTE_ANGULAR':
             console.log("Vote Angular!");
+            // immutable state, return a new copy of state 
             return (
-                // Object.assign(target, ...sources)
+                // ES6: Object.assign(target, ...sources)
                 // Object.assign() 方法用于将所有可枚举的属性的值从一个或多个源对象复制到目标对象。
                 Object.assign(
                     {}, 
