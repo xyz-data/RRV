@@ -5,6 +5,7 @@ const initialState = {
     vue: 0
 };
 
+
 // Reducer 用来处理 Action 触发的对状态树的更改。
 // (currentState, action) => newState
 
