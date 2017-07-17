@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* Typing animation */
+        
+        @keyframes typing {
+            from {
+                width: 0
+            }
+        }
+        
+        @keyframes caret {
+            50% {
+                border-right-color: transparent;
+            }
+        }
+        
+        h1 {
+            font: bold 200% Consolas, Monaco, monospace;
+            /*width: 8.25em;*/
+            width: 15ch;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: .05em solid;
+            animation: typing 8s steps(15), caret 1s steps(1) infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS is awesome!</h1>
+    <script>
+        window.onload = () => {
+            // window.location = "https://" + window.location.hostname + window.location.pathname + window.location.search;
+            window.location.pathname = "/build/index.html";
+            // window.location = "https://" + window.location.hostname + window.location.pathname;
+            // window.location = "https://learning.xgqfrms.xyz/";
+            // + RRV + 
+            /* const new_index = `${window.location.hostname}/RRV${window.location.pathname}`;
+            return new_index; */
+            window.location = `${window.location.hostname}/RRV${window.location.pathname}`;
+        }
+    </script>
+    <!-- 
+http://play.csssecrets.io/
+http://dabblet.com/gist/b04ab9f41084b0a66960
+https://github.com/xgqfrms/xgqfrms/issues/12
+https://github.com/LeaVerou/play.csssecrets.io/blob/gh-pages/404.html
+# How to detect on-page 404 errors using JavaScript? 
+> 如何使用JavaScript检测页面404错误？
+https://gist.github.com/xgqfrms-GitHub/3c1df86c0cca4281516ddbb7132f77c3
+https://css-tricks.com/snippets/javascript/redirect-to-ssl/
+
+https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
+
+https://developer.mozilla.org/zh-CN/docs/Web/API/Response/status
+
+https://social.msdn.microsoft.com/Profile/xgqfrms/activity
+
+http://xgqfrms.wixsite.com/xgqfrms
+ -->
+</body>
+
+</html>

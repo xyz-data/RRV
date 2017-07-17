@@ -1,31 +1,33 @@
 // actions 返回不同 type 的 object
 
-/* const voteReact = () => {
-    return {
-        type: 'VOTE_REACT',
-        payload : {
-            text: 'react 15'
+/* 
+    const voteReact = () => {
+        return {
+            type: 'VOTE_REACT',
+            payload : {
+                text: 'react 15'
+            }
         }
-    }
-};
+    };
 
-const voteAngular = () => {
-    return {
-        type: 'VOTE_ANGULAR',
-        payload : {
-            text: 'ng 2'
+    const voteAngular = () => {
+        return {
+            type: 'VOTE_ANGULAR',
+            payload : {
+                text: 'ng 2'
+            }
         }
-    }
-};
+    };
 
-const voteVuejs = () => {
-    return {
-        type: 'VOTE_VUEJS',
-        payload : {
-            text: 'vue 2'
+    const voteVuejs = () => {
+        return {
+            type: 'VOTE_VUEJS',
+            payload : {
+                text: 'vue 2'
+            }
         }
-    }
-}; */
+    };
+*/
 
 // 使用 Action Creators 生成 action
 // Action Creators 是一个 pure function，它最后会返回一个 action 对象

@@ -326,9 +326,21 @@ http://redux.js.org/docs/basics/UsageWithReact.html#designing-component-hierarch
 
 
 
+# webpack sources codes map
 
 
+```js
 
+{
+    "main.css": "static/css/main.a58d74b1.css",
+    "main.css.map": "static/css/main.a58d74b1.css.map",
+    "main.js": "static/js/main.47392501.js",
+    "main.js.map": "static/js/main.47392501.js.map"
+}
+
+```
+
+`npm run build`, how to remove webpack source map ?
 
 
 
