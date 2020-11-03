@@ -2,7 +2,7 @@
 
 > redux-react-voting
 
-https://github.com/gildata/RRV.git
+https://github.com/xyzdata/RRV.git
 
 
 # Learn Redux
